@@ -21,21 +21,21 @@
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                      materialDesign:HintAssist.Hint="TextBox at 100% scale"
                      TextAlignment="Left" TextWrapping="Wrap" VerticalContentAlignment="Stretch"
-                     Text="This is a MaterialDesignFloatingHintTextBox initialized with a single line of text.">
+                     Text="This is a MaterialDesignFloatingHintTextBox with a single line of text.">
             </TextBox>
 
             <TextBox Margin="16 8"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                      materialDesign:HintAssist.Hint="TextBox at 100% scale"
                      TextAlignment="Left" TextWrapping="Wrap" VerticalContentAlignment="Stretch"
-                     Text="This is a MaterialDesignFloatingHintTextBox initialized with multiple lines of text. Notice how the hint falls behind the content area. Try adding more lines to see how the positioning of the hint gets progressively worse.">
+                     Text="This is a MaterialDesignFloatingHintTextBox initialized with multiple lines of text. Notice how the floating hint (label) falls behind as the content area grows in height. Try adding more lines to see how the positioning of the label gets progressively worse.">
             </TextBox>
 
             <TextBox Margin="16 8"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                      materialDesign:HintAssist.Hint="TextBox at 200% scale"
                      TextAlignment="Left" TextWrapping="Wrap" VerticalContentAlignment="Stretch"
-                     Text="This is a MaterialDesignFloatingHintTextBox initialized with multiple lines of text. Notice how the hint falls behind the content area. Try adding more lines to see how the positioning of the hint gets progressively worse.">
+                     Text="This is a MaterialDesignFloatingHintTextBox initialized with multiple lines of text. Notice how the floating hint (label) falls behind as the content area grows in height. Try adding more lines to see how the positioning of the label gets progressively worse.">
                 <TextBox.LayoutTransform>
                     <ScaleTransform ScaleX="2" ScaleY="2" />
                 </TextBox.LayoutTransform>
