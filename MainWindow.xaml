@@ -1,0 +1,45 @@
+﻿<Window x:Class="MDIXTest2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MDIXTest2"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesign.Brush.Foreground}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="14"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesign.Brush.Background}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <TextBox Margin="16 8"
+                     Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                     materialDesign:HintAssist.Hint="TextBox at 100% scale"
+                     TextAlignment="Left" TextWrapping="Wrap" VerticalContentAlignment="Stretch"
+                     Text="This is a MaterialDesignFloatingHintTextBox initialized with a single line of text.">
+            </TextBox>
+
+            <TextBox Margin="16 8"
+                     Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                     materialDesign:HintAssist.Hint="TextBox at 100% scale"
+                     TextAlignment="Left" TextWrapping="Wrap" VerticalContentAlignment="Stretch"
+                     Text="This is a MaterialDesignFloatingHintTextBox initialized with multiple lines of text. Notice how the hint falls behind the content area. Try adding more lines to see how the positioning of the hint gets progressively worse.">
+            </TextBox>
+
+            <TextBox Margin="16 8"
+                     Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                     materialDesign:HintAssist.Hint="TextBox at 200% scale"
+                     TextAlignment="Left" TextWrapping="Wrap" VerticalContentAlignment="Stretch"
+                     Text="This is a MaterialDesignFloatingHintTextBox initialized with multiple lines of text. Notice how the hint falls behind the content area. Try adding more lines to see how the positioning of the hint gets progressively worse.">
+                <TextBox.LayoutTransform>
+                    <ScaleTransform ScaleX="2" ScaleY="2" />
+                </TextBox.LayoutTransform>
+            </TextBox>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
